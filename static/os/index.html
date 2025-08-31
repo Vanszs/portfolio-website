@@ -1,0 +1,295 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VibeOS — Bevantyo Satria Pinandhita</title>
+    <link rel="icon" href="/static/images/favicon.ico" />
+    <style>
+      :root{--bg:#0b0c0f;--card:#12141a;--muted:#aab0c0;--text:#e6e9f2;--brand:#5eead4;--link:#93c5fd}
+      *{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:500 15px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+      a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+      .wrap{max-width:980px;margin:24px auto;padding:16px}
+      .hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+      .badge{background:rgba(94,234,212,.1);color:var(--brand);border:1px solid rgba(94,234,212,.4);padding:4px 8px;border-radius:999px;font-size:12px}
+      .card{background:var(--card);border:1px solid #1e2330;border-radius:12px;padding:16px}
+      h1{font-size:28px;margin:0}h2{font-size:18px;margin:0 0 8px}
+      ul{margin:8px 0 0 18px}
+      .grid{display:grid;grid-template-columns:1fr;gap:12px}
+      .muted{color:var(--muted)}
+      .row{display:flex;gap:8px;flex-wrap:wrap}
+      .btn{display:inline-block;background:#1e293b;color:#e2e8f0;border:1px solid #2a3446;padding:8px 12px;border-radius:8px}
+      .btn:hover{background:#0f172a}
+      .small{font-size:13px}
+      /* Experience grid/cards */
+      .exp-grid{display:grid;grid-template-columns:1fr;gap:12px}
+      @media(min-width:860px){.exp-grid{grid-template-columns:1fr 1fr}}
+      .subcard{border:1px dashed #2a3446;border-radius:10px;padding:12px}
+      .role{font-weight:700}
+      .meta{color:var(--muted);font-size:13px;margin-top:2px}
+      .kvs{margin:6px 0 0 18px}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero card">
+        <div>
+          <div class="badge">Vibe Coder</div>
+          <h1>Bevantyo Satria Pinandhita</h1>
+          <p class="muted">AI & Blockchain Engineer | Mobile Dev | Full Stack Web Dev | IoT Engineer | Penetration Tester | Web3 Community Builder — with strong technical fundamentals. Building solutions from concept to production.</p>
+          <div class="row">
+            <a class="btn" href="mailto:bevansatriaa@gmail.com">Primary Email: bevansatriaa@gmail.com</a>
+            <a class="btn" href="mailto:bevansatria@gmail.com">Alternate: bevansatria@gmail.com</a>
+            <a class="btn" href="tel:+6285381568989">Phone/WA: +62 853-8156-8989</a>
+            <a class="btn" href="https://github.com/Vanszs" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/bevansatria/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Experience</h2>
+          <div class="exp-grid">
+            <div class="subcard">
+              <div class="role">Solo Flutter Developer</div>
+              <div class="meta">Surabaya City Government • 07/2025</div>
+              <ul class="kvs">
+                <li>Built two Flutter apps end‑to‑end in 2 weeks using AI tools (ChatGPT, Copilot).</li>
+                <li>Implemented Material Design 3 with light/dark themes and Lottie animations for intuitive UX.</li>
+                <li>Architected offline‑first flows using Riverpod/Provider, SharedPreferences, and connectivity_plus.</li>
+                <li>Integrated REST + Socket.IO real‑time sync to reduce data latency by ~60%.</li>
+                <li>Configured Firebase Cloud Messaging (FCM) for push notifications to increase engagement.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Solo Full‑Stack Web Developer</div>
+              <div class="meta">Surabaya City Government • 07/2025</div>
+              <ul class="kvs">
+                <li>Delivered a Next.js (App Router) admin dashboard with React + TypeScript in 2 weeks.</li>
+                <li>Built secure REST APIs with Next.js routes + MySQL, bcrypt hashing, and HMAC‑signed sessions.</li>
+                <li>Implemented RBAC across 4 roles via Next.js middleware; added activity logging and audit trail.</li>
+                <li>Added FCM notifications and live stats refresh; deployed on Vercel/Docker with env configs.</li>
+                <li>Set up GitHub Actions CI/CD for build, test, and deploy to cut release time by ~40%.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Flutter Developer & IoT Intern</div>
+              <div class="meta">PT IGS Indonesia Group • 01/2025–07/2025</div>
+              <ul class="kvs">
+                <li>Built Landslide Early Warning System (LEWS) with Flutter app and Next.js dashboard (Mapbox, Chart.js, JWT).</li>
+                <li>Designed Node/Express backend with HMAC‑SHA256 + JWT; documented system requirements.</li>
+                <li>IoT architecture under Rp10M with sensors (rain gauge, soil moisture, MPU‑9250), LoRa/GSM, 20Wp solar.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Blockchain Developer Intern</div>
+              <div class="meta">Seeds Finance • 12/2024–04/2025</div>
+              <ul class="kvs">
+                <li>Built decentralized marketplace on Diamante: NFT minting, listing, buying/selling.</li>
+                <li>Contract testing and optimization for secure, efficient flows.</li>
+                <li>NFT solutions integrated with front‑end; performance analysis and debugging for high‑volume transactions.</li>
+                <li>Code optimizations reduced latency (~15%).</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Community Manager & Developer Mentor</div>
+              <div class="meta">Blockhood • 04/2025–Present</div>
+              <ul class="kvs">
+                <li>Moderated channels and ran AMAs/workshops for member growth.</li>
+                <li>Mentored newcomers with structured learning paths.</li>
+                <li>Reduced reliance on core devs by standardizing guidance.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Discord Community Lead</div>
+              <div class="meta">Venimee (YouTuber) • 06/2024–Present</div>
+              <ul class="kvs">
+                <li>Initiated and scaled a Discord community from zero with clear engagement workflows.</li>
+                <li>Recruited, trained, and managed moderators with defined roles.</li>
+                <li>Drove partnerships and negotiated terms; owned strategy, culture, and daily governance.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">AI Engineer</div>
+              <div class="meta">ArcalisAI • 01/2025–05/2025</div>
+              <ul class="kvs">
+                <li>Developed and implemented AI systems using models such as GPT and DeepSeek.</li>
+                <li>Trained and optimized models via hyperparameter selection and fine‑tuning.</li>
+                <li>Integrated AI APIs (OpenAI, OpenRouter) for seamless operations.</li>
+                <li>Monitored and ensured optimal model performance.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Community Lead</div>
+              <div class="meta">Seeds Finance • 12/2024–04/2025</div>
+              <ul class="kvs">
+                <li>Managed Web3 partnerships with revenue‑sharing via Discord/Telegram.</li>
+                <li>Published regular updates to drive engagement and value.</li>
+                <li>Participated in discussions to strengthen trust and collaboration.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Community Moderator</div>
+              <div class="meta">CARV • 12/2023–Present</div>
+              <ul class="kvs">
+                <li>Managed game nights, resolved support tickets, and facilitated member interactions.</li>
+                <li>Oversaw community activities to ensure smooth user experiences.</li>
+                <li>Collaborated with colleagues to enhance engagement and support.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">President — Autonomous Team, Robotics</div>
+              <div class="meta">UPNVJT • 11/2022–11/2024</div>
+              <ul class="kvs">
+                <li>Led ASV division to 2nd place at KKCTBN 2023 and KKI 2024.</li>
+                <li>Advanced design and integration across mechanical, electrical, and software.</li>
+                <li>Coordinated iterative testing and documentation.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Event Coordinator & Research Staff</div>
+              <div class="meta">BEM Fasilkom UPNVJT • 2023–04/2024</div>
+              <ul class="kvs">
+                <li>EO Chair: Fasilkom Talk #4 (AI & Data Science) and #3 (online).</li>
+                <li>Vice Coordinator: Loka Karya (Python & Machine Learning) workshop.</li>
+                <li>Ensured logistics, communication, and engaging learning outcomes.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Skills</h2>
+          <ul class="small">
+            <li><b>Fundamentals:</b> Algorithms & Data Structures; Distributed Systems; IoT Architecture; API Security (JWT, HMAC‑SHA256); CI/CD.</li>
+            <li><b>AI/ML & Data:</b> TensorFlow, YOLOv5, Evolutionary Strategies; CV/NLP basics; Jetson Nano; TFLite.</li>
+            <li><b>Blockchain:</b> Solidity; Smart Contracts; Diamante SDK; Rust (Solana migration); dApps.</li>
+            <li><b>Development:</b> Flutter; Next.js/React; Node.js/Express; REST; Mapbox; Chart.js; Docker; GitHub Actions.</li>
+            <li><b>Mobile:</b> Flutter (Provider, BLoC, Riverpod).</li>
+            <li><b>Web:</b> Next.js/React; Tailwind; shadcn/ui; Vercel; MySQL.</li>
+            <li><b>Penetration Testing:</b> Nmap; SQLMap; Burp Suite; Nuclei; HTTPx; Metasploit; FFuf; OWASP ZAP.</li>
+            <li><b>Community & Leadership:</b> Discord/Telegram moderation; AMAs; event management; partnership building.</li>
+          </ul>
+        </aside>
+
+        <section class="card" style="grid-column: 1 / -1;">
+          <h2>Selected Projects</h2>
+          <div class="exp-grid">
+            <div class="subcard">
+              <div class="role">Landslide Early Warning System</div>
+              <div class="meta">PT IGS Indonesia Group • Flutter Dev & IoT Intern</div>
+              <ul class="kvs">
+                <li>Early warning and monitoring for low‑signal areas with budget constraints.</li>
+                <li>Flutter app; Next.js dashboard (Mapbox, Chart.js, JWT); Node/Express (HMAC+JWT).</li>
+                <li>IoT sensors (rain gauge, soil moisture, MPU‑9250), LoRa/GSM, solar power.</li>
+                <li>Real‑time monitoring; budget &lt; Rp10M; field reliability (placeholder).</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Government Apps & Admin Dashboard</div>
+              <div class="meta">Surabaya City Government • Solo Flutter & Full‑Stack Developer</div>
+              <ul class="kvs">
+                <li>Rapid release of two mobile apps with secure admin operations.</li>
+                <li>Next.js admin with RBAC, REST, real‑time sync; GitHub Actions CI/CD.</li>
+                <li>~60% faster releases; −40% deployment time; zero crashes post‑release.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">IoT‑based Computer Vision for SMEs</div>
+              <div class="meta">Bangkit Capstone • ML & Embedded</div>
+              <ul class="kvs">
+                <li>Addressed slow manual quality control with lightweight CV pipeline.</li>
+                <li>Jetson Nano + YOLOv5 + TFLite; dashboard integration.</li>
+                <li>Improved operational efficiency (qualitative).</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Decentralized NFT Marketplace</div>
+              <div class="meta">Seeds Finance • Blockchain</div>
+              <ul class="kvs">
+                <li>Secure, efficient NFT minting, listing, and trading on Diamante.</li>
+                <li>Smart contract development and integration; gas/latency optimization; testing.</li>
+                <li>Qualitative outcomes (no new figures).</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Arcalis AI Hackathon dApp</div>
+              <div class="meta">Arcalis AI • Blockchain Developer</div>
+              <ul class="kvs">
+                <li>End‑to‑end dApp prototype within strict hackathon timeline.</li>
+                <li>Solidity contracts; Web3 front‑end integration (wallet connect, transactions).</li>
+                <li>Outlined Rust/Solana migration path; end‑to‑end functional prototype.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <div class="role">Autonomous Surface Vessel</div>
+              <div class="meta">Robotics UPNVJT • Team Lead</div>
+              <ul class="kvs">
+                <li>Autonomous navigation and obstacle avoidance for competitions.</li>
+                <li>System integration, navigation tuning, iterative testing, documentation.</li>
+                <li>2nd place at KKCTBN 2023 and KKI 2024.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Education</h2>
+          <ul>
+            <li>UPN “Veteran” Jawa Timur — B.Comp.Sc. (2022–2026)</li>
+            <li>Universitas Terbuka — B.Management (07/2024–Present)</li>
+          </ul>
+        </aside>
+
+        <aside class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>IT Specialist — Artificial Intelligence (Certiport, Credential ID: 7768.23-TCC-BONE)</li>
+          </ul>
+        </aside>
+
+        <aside class="card">
+          <h2>Awards</h2>
+          <ul>
+            <li>2nd Place — Robotics National Competition KKCTBN 2023 (ASV)</li>
+            <li>2nd Place — Robotics National Competition KKI 2024 (ASV)</li>
+            <li>Team Leader — ATSV 2023, Universitas Indonesia</li>
+            <li>Team Leader — ASV 2024, Politeknik Perkapalan Negeri Surabaya (PPNS)</li>
+          </ul>
+        </aside>
+
+        <section class="card" style="grid-column: 1 / -1;">
+          <h2>Publications</h2>
+          <ul>
+            <li>2024 — <a href="https://ieeexplore.ieee.org/abstract/document/10845319" target="_blank" rel="noreferrer">Exploring the Potential of Hybrid Whale Optimization Algorithm: A Literature Review — IEEE</a></li>
+            <li>2023 — <a href="https://ieeexplore.ieee.org/document/10420404/" target="_blank" rel="noreferrer">Food Optimizing for Patients with Kidney Failure Using Evolution Strategies Algorithm — IEEE</a></li>
+            <li>2023 — <a href="https://journal.ittelkom-pwt.ac.id/index.php/ledger/article/view/1280" target="_blank" rel="noreferrer">Optimizing Chicken Feed Using Evolution Strategies (ES) Algorithm — ITT Purwokerto</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="muted small">Contact: bevansatriaa@gmail.com • Surabaya, Indonesia • GitHub: @Vanszs</p>
+    </div>
+    <script>
+      (function () {
+        function postWheel(e) {
+          try {
+            if (window.parent) {
+              window.parent.postMessage({ type: 'wheel', deltaY: e.deltaY }, '*');
+            }
+          } catch (err) {}
+        }
+        function postScroll() {
+          try {
+            if (window.parent) {
+              window.parent.postMessage({ type: 'wheel', deltaY: 1 }, '*');
+            }
+          } catch (err) {}
+        }
+        window.addEventListener('wheel', postWheel, { passive: true });
+        window.addEventListener('scroll', postScroll, { passive: true });
+      })();
+    </script>
+  </body>
+  </html>

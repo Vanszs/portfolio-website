@@ -128,6 +128,19 @@ export default class MonitorScreen extends EventEmitter {
             },
             false
         );
+
+        // Auto-zoom into monitor when scrolling inside the OS iframe
+        document.addEventListener(
+            'wheel',
+            (event) => {
+                // Only respond to wheel events originating from the iframe (marked by inComputer)
+                // @ts-ignore
+                if (event.inComputer) {
+                    this.camera.trigger('enterMonitor');
+                }
+            },
+            false
+        );
     }
 
     /**
@@ -175,6 +188,9 @@ export default class MonitorScreen extends EventEmitter {
                     } else if (event.data.type === 'keyup') {
                         // @ts-ignore
                         evt.key = event.data.key;
+                    } else if (event.data.type === 'wheel') {
+                        // @ts-ignore
+                        evt.deltaY = event.data.deltaY ?? 0;
                     }
 
                     iframe.dispatchEvent(evt);
@@ -184,7 +200,7 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'https://os.henryheffernan.com/';
+        iframe.src = '/os/index.html';
         /**
          * Use dev server is query params are present
          *
@@ -196,6 +212,7 @@ export default class MonitorScreen extends EventEmitter {
         if (urlParams.has('dev')) {
             iframe.src = 'http://localhost:3000/';
         }
+        iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
         iframe.style.width = this.screenSize.width + 'px';
         iframe.style.height = this.screenSize.height + 'px';
         iframe.style.padding = IFRAME_PADDING + 'px';
@@ -204,7 +221,7 @@ export default class MonitorScreen extends EventEmitter {
         iframe.className = 'jitter';
         iframe.id = 'computer-screen';
         iframe.frameBorder = '0';
-        iframe.title = 'HeffernanOS';
+        iframe.title = 'VibeOS';
 
         // Add iframe to container
         container.appendChild(iframe);
