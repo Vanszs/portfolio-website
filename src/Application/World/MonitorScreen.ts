@@ -71,9 +71,7 @@ export default class MonitorScreen extends EventEmitter {
                 // @ts-ignore
                 this.inComputer = event.inComputer;
 
-                if (this.inComputer && !this.prevInComputer) {
-                    this.camera.trigger('enterMonitor');
-                }
+                // Do not auto-enter monitor on hover; enter only on wheel+hover or click on laptop
 
                 if (
                     !this.inComputer &&
@@ -108,6 +106,11 @@ export default class MonitorScreen extends EventEmitter {
 
                 this.mouseClickInProgress = true;
                 this.prevInComputer = this.inComputer;
+
+                // Enter monitor if the click is on the laptop (iframe area)
+                if (this.inComputer) {
+                    this.camera.trigger('enterMonitor');
+                }
             },
             false
         );

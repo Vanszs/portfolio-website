@@ -84,6 +84,31 @@ export default class Camera extends EventEmitter {
             }
         });
 
+        // Scroll back outside OS: zoom out one level
+        document.addEventListener(
+            'wheel',
+            (event: any) => {
+                const dy = typeof event?.deltaY === 'number' ? event.deltaY : 0;
+                const inComputer = !!event?.inComputer;
+                if (inComputer) return; // ignore scrolls from inside OS iframe
+                if (dy < 0) {
+                    // step out one level
+                    if (
+                        this.currentKeyframe === CameraKey.MONITOR ||
+                        this.targetKeyframe === CameraKey.MONITOR
+                    ) {
+                        this.transition(CameraKey.DESK, 800);
+                    } else if (
+                        this.currentKeyframe === CameraKey.DESK ||
+                        this.targetKeyframe === CameraKey.DESK
+                    ) {
+                        this.transition(CameraKey.IDLE, 800);
+                    }
+                }
+            },
+            { passive: true } as any
+        );
+
         this.setPostLoadTransition();
         this.setInstance();
         this.setMonitorListeners();
