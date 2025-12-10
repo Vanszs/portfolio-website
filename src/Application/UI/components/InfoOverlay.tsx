@@ -7,7 +7,7 @@ interface InfoOverlayProps {
 }
 
 const NAME_TEXT = 'Bevantyo Satria Pinandhita';
-const TITLE_TEXT = 'Senior Vibe Coder';
+const TITLE_TEXT = 'Senior Vibe Coder | AI, Web App & Blockchain Engineer';
 const MULTIPLIER = 1;
 
 const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
